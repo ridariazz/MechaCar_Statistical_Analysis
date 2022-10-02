@@ -32,8 +32,27 @@ View(total_summary)
 lot_summary <- suspension_table  %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI), Var_PSI=var(PSI), Std_Dev_PSI=sd(PSI), Num_Coil=n(), .groups = 'keep')  
 View(lot_summary)
 
+# On ReadMe, have a subheading (## Summary Statistics on Suspension Coils) and provide screenshots of lot_summary and total_summary
+
+## Deliverable 3
+# Technical Analysis 
+# t.test() function to determine the PSI across all manufacturing lots is statistically different 
+# from the population mean of 1,500 pounds per square inch 
+t.test(suspension_table$PSI,mu=1500)
+
+# write three more scripts 
+# determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+ lot1 <- subset(suspension_table, Manufacturing_Lot=="Lot1")
+ lot2 <- subset(suspension_table, Manufacturing_Lot=="Lot2")
+ lot3 <- subset(suspension_table, Manufacturing_Lot=="Lot3")
+ t.test(lot1$PSI,mu=1500)
+ t.test(lot2$PSI,mu=1500)
+ t.test(lot3$PSI,mu=1500)
 
 
+# In your README, create a subheading ## T-Tests on Suspension Coils, then briefly summarize your 
+# interpretation and findings for the t-test results. 
+# Include screenshots of the t-test to support your summary.
 
 
 
