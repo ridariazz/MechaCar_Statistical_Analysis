@@ -13,41 +13,76 @@ Our goal in this project is to review the production data to gain insights that 
 This dataset contains mpg test results for 50 prototype MechaCars. Multiple metrics for each car were collected as in vehicle length, vehicle weight, spoiler angle, drivetrain and ground clearance. We designed a linear model that predicts the mpg of MechaCar prototypes using several variables from the MechaCar dataset. 
 
 Step 1: Adding dplyr package 
-(insert image)
+
+<img width="598" alt="adding dplyr" src="https://user-images.githubusercontent.com/106577074/193495758-91ebaa13-c006-49aa-a662-80447faae285.png">
+
 
 Step 2: Import and read in the MechaCar_mpg.csv file as a dataframe.
-(insert image)
 
 Step 3: Perform linear regression using the lm() function. In the lm() function, pass in all six variables (i.e., columns), and add the dataframe you created in Step 4 as the data parameter.
-(insert image)
+
+<img width="602" alt="mecha df and linear regression" src="https://user-images.githubusercontent.com/106577074/193495773-66260d50-9b15-4511-b927-f963b1e380b3.png">
+
+*MechaCar Data Table:* 
+
+<img width="595" alt="mechacar data" src="https://user-images.githubusercontent.com/106577074/193495812-583871a9-40b4-4371-bec9-3293ef94f027.png">
+
+<img width="498" alt="mechacar_table" src="https://user-images.githubusercontent.com/106577074/193495835-d53017e5-5c76-4fd0-94c4-99aecad2c3bf.png">
 
 Step 4: Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
+
+<img width="598" alt="p-value and r squared value" src="https://user-images.githubusercontent.com/106577074/193495877-e8fe9433-9ed3-491c-a4b9-e000a303dbfe.png">
 
 ### Deliverable 2: Summary Statistics on Suspension Coils
 
 The next step to our analysis is analyzing the results from multiple production lots contained in the Suspension_Coil dataset. The weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
 
 Step 1: Download the Suspension_Coil.csv file
-(insert image)
 
 Step 2: In your MechaCarChallenge.RScript, import and read in the Suspension_Coil.csv file as a table.
-(insert image)
+
+<img width="592" alt="import suspension data" src="https://user-images.githubusercontent.com/106577074/193495918-8d7a2016-a45b-4ac6-9f66-a0278ab6a644.png">
+
+
+<img width="380" alt="suspension data" src="https://user-images.githubusercontent.com/106577074/193495930-73824dc0-9fc1-4d04-b717-0ac7db6236f0.png">
+
+<img width="498" alt="suspension df" src="https://user-images.githubusercontent.com/106577074/193495995-372383b8-ff60-4cbb-b560-e374e39c8210.png">
 
 Step 3: Write an RScript that creates a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
-(insert image)
+
+<img width="590" alt="total summary code" src="https://user-images.githubusercontent.com/106577074/193496027-f7b3e491-6ddb-4f0c-9c5a-0f307d800bd7.png">
+
+<img width="593" alt="total summary" src="https://user-images.githubusercontent.com/106577074/193496056-c6bc681b-73ca-4091-b0d3-e01b78f6c6b2.png">
 
 Step 4: creating a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
-(insert image)
+
+<img width="599" alt="lot summary" src="https://user-images.githubusercontent.com/106577074/193496076-6ae3bc72-22fd-4100-bcb2-9c863176b21b.png">
+
+<img width="589" alt="lot summary df" src="https://user-images.githubusercontent.com/106577074/193496113-11cba727-f25f-4290-8c5f-8d0aa9d84ee2.png">
 
 ### Deliverable 3: T-Test on Suspension Coils
 
 For this part of our analysis, we performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 Step 1: Writing a t-test function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
-(insert image)
+
+<img width="589" alt="t-test suspension data" src="https://user-images.githubusercontent.com/106577074/193496153-bbe65af8-0818-4d6b-8124-59af37ea7e38.png">
 
 Step 2: determining the PSI for each of the three manufacturing lots
-(insert image)
+
+<img width="515" alt="PSI FOR EACH LOT" src="https://user-images.githubusercontent.com/106577074/193496172-8baa5c0c-6d5f-424f-add7-691c462d3837.png">
+
+*Lot 1*
+
+<img width="481" alt="LOT 1" src="https://user-images.githubusercontent.com/106577074/193496207-258713ca-f1a0-4085-a1fa-c2a117d55b12.png">
+
+*Lot 2:*
+
+<img width="450" alt="lot 2" src="https://user-images.githubusercontent.com/106577074/193496218-77616576-227f-4706-a1ea-0d1d4987cd73.png">
+
+*Lot 3:*
+
+<img width="544" alt="lot 3" src="https://user-images.githubusercontent.com/106577074/193496233-db9983f1-7108-43d5-8e67-90a7bf7625dc.png">
 
 ## Study Design: MechaCar vs Competition
 
