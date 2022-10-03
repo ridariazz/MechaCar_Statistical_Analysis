@@ -33,6 +33,10 @@ Step 4: Using the summary() function, determine the p-value and the r-squared va
 
 <img width="598" alt="p-value and r squared value" src="https://user-images.githubusercontent.com/106577074/193495877-e8fe9433-9ed3-491c-a4b9-e000a303dbfe.png">
 
+**Deliverable 1 Summary** 
+
+The variables likely to provide non-random amount of variance to the mpg values in the data set are the vehicle length and ground clearance variables. These two variables have an impact on the mpg in the MechaCar dataset. Moreover, p-value of the overall data is 5.35x10^-11 which is smaller than the 0.05% significane indicating slope of this line is not zero. Lastly, this linear regression model does effictively predict the MechaCar prototypes effictively as the multiple r-squared value is 72%. 
+
 ### Deliverable 2: Summary Statistics on Suspension Coils
 
 The next step to our analysis is analyzing the results from multiple production lots contained in the Suspension_Coil dataset. The weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
@@ -59,6 +63,10 @@ Step 4: creating a lot_summary dataframe using the group_by() and the summarize(
 <img width="599" alt="lot summary" src="https://user-images.githubusercontent.com/106577074/193496076-6ae3bc72-22fd-4100-bcb2-9c863176b21b.png">
 
 <img width="589" alt="lot summary df" src="https://user-images.githubusercontent.com/106577074/193496113-11cba727-f25f-4290-8c5f-8d0aa9d84ee2.png">
+
+**Deliverable 2 Summary**
+
+The manufacturing data 
 
 ### Deliverable 3: T-Test on Suspension Coils
 
