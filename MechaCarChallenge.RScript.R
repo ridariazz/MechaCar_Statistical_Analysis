@@ -54,6 +54,8 @@ t.test(suspension_table$PSI,mu=1500)
 # interpretation and findings for the t-test results. 
 # Include screenshots of the t-test to support your summary.
 
+# Deliverable 4
+# Create a subheading ## Study Design: MechaCar vs Competition
 
 
 
