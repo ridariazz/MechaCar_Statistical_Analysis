@@ -66,7 +66,15 @@ Step 4: creating a lot_summary dataframe using the group_by() and the summarize(
 
 **Deliverable 2 Summary**
 
-The manufacturing data 
+The current manufacturing data does meet this design specification for all manufacturing lots since the variance across all lots in 62 PSI. 
+
+Lots 1 and 2 are well within the variance: 
+
+-Lot 1: 0.98 PSI
+
+-Lot 2: 7.47 PSI 
+
+Lot 3, however, has such a high variable standing at 170 PSI and is very disproportionate causing it to be the farthest from the mean. 
 
 ### Deliverable 3: T-Test on Suspension Coils
 
@@ -91,6 +99,12 @@ Step 2: determining the PSI for each of the three manufacturing lots
 *Lot 3:*
 
 <img width="544" alt="lot 3" src="https://user-images.githubusercontent.com/106577074/193496233-db9983f1-7108-43d5-8e67-90a7bf7625dc.png">
+
+** Deliverable 3 Summary** 
+
+The t-test indicates the mean of the dataset is x = 1498.78
+
+Our p-value is 0.06 which is higher than 0.05 indicating that the null hypothesis is not rejected because the deviation from the null hypothesis is not statistically significant. We do not have enough evidence to reject the null hypothesis. 
 
 ## Study Design: MechaCar vs Competition
 
